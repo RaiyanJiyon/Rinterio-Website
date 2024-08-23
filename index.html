@@ -648,16 +648,16 @@
 
             <!-- faq image -->
             <div class="w-full md:w-1/2 h-auto mt-4 md:mt-0">
-                <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?q=80&w=1858&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class=" object-cover rounded-2xl">
+                <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?q=80&w=1858&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="" class=" object-cover rounded-2xl">
             </div>
         </section>
 
-
-
         <!-- form section -->
-        <section class="bg-cover bg-center h-auto mt-12 md:mt-24 px-24" style="background-image: url('assets/bg.jpg');">
+        <section class="bg-cover bg-center h-auto mt-12 md:mt-24 md:px-24 pb-12 md:pb-16"
+            style="background-image: url('assets/bg.jpg');">
             <!-- form section contents -->
-            <div class="mx-auto w-11/12 md:w-3/4 md:pt-14">
+            <div class="w-full md:pt-14">
                 <!-- button -->
                 <div class="flex items-center justify-center">
                     <button
@@ -682,54 +682,56 @@
                 </p>
             </div>
 
-            <form action="">
-                <!-- first name last name -->
-                <div
-                    class="flex flex-col md:flex-row justify-between border-7 border-white rounded-3xl p-2 space-y-4 md:space-y-0">
+            <!-- form -->
+            <form action="" class="h-auto pt-8 flex flex-col items-center justify-center">
+                <!-- first and last name -->
+                <div class="flex flex-col gap-6 md:flex-row w-full">
+                    <!-- first name -->
                     <input type="text" placeholder="First Name*"
-                        class="flex-1 p-3 mx-2 bg-[#FFFFFF] rounded-full outline-none text-[#A0A0A0] text-sm md:text-base">
+                        class="border-7 h-14 md:h-[64px] w-[90%] mx-auto md:w-1/2 rounded-[64px] border-[#e9e9e9] bg-[#FFFFFF] p-2 outline-none" />
+
+                    <!-- last name -->
                     <input type="text" placeholder="Last Name*"
-                        class="flex-1 p-3 mx-2 bg-[#FFFFFF] rounded-full outline-none text-[#A0A0A0] text-sm md:text-base">
+                        class="border-7 h-14 md:h-[64px] w-[90%] mx-auto md:w-1/2 rounded-[64px] border-[#e9e9e9] bg-[#FFFFFF] p-2 outline-none" />
                 </div>
-                <!-- phone number and email address -->
-                <div
-                    class="flex flex-col md:flex-row justify-between border-7 border-white rounded-3xl p-2 space-y-4 md:space-y-0">
-                    <input type="text" placeholder="Phone Number*"
-                        class="flex-1 p-3 mx-2 bg-[#FFFFFF] rounded-full outline-none text-[#A0A0A0] text-sm md:text-base">
-                    <input type="text" placeholder="Email Number*"
-                        class="flex-1 p-3 mx-2 bg-[#FFFFFF] rounded-full outline-none text-[#A0A0A0] text-sm md:text-base">
+
+                <!-- phone and email number -->
+                <div class="flex flex-col gap-6 md:flex-row w-full mt-6">
+                    <!-- first name -->
+                    <input type="number" placeholder="Phone Number*"
+                        class="border-7 h-14 md:h-[64px] w-[90%] mx-auto md:w-1/2 rounded-[64px] border-[#e9e9e9] bg-[#FFFFFF] p-2 outline-none" />
+
+                    <!-- last name -->
+                    <input type="email" placeholder="Phone Number*"
+                        class="border-7 h-14 md:h-[64px] w-[90%] mx-auto md:w-1/2 rounded-[64px] border-[#e9e9e9] bg-[#FFFFFF] p-2 outline-none" />
                 </div>
 
                 <!-- message field -->
-                <div class="flex justify-between border-7 border-white rounded-3xl p-2">
-                    <textarea
-                        class="w-full h-[240px] p-3 mx-2 text-[#A0A0A0] text-sm md:text-base bg-white rounded-[32px] outline-none"
-                        placeholder="Write your message here"></textarea>
+                <div class="mt-6 w-11/12 md:w-full flex justify-center items-center">
+                    <textarea placeholder="Write your message here"
+                        class="w-[100%] mx-auto md:w-full h-[240px] rounded-[32px] border-[#e9e9e9] bg-[#FFFFFF] p-2 outline-none"></textarea>
                 </div>
 
                 <!-- form button -->
-                <div class="flex justify-center items-center w-[98%] mx-auto pb-14">
-                    <button class="w-full btn bg-primary-color text-base md:text-xl font-extrabold rounded-[32px] mt-4">
-                        Send Mail
-                        <!-- icon -->
-                        <div class="w-6 h-6 rounded-full bg-black flex justify-center items-center">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5}
-                                stroke="currentColor" class="w-5 h-3 text-white">
-                                <path strokeLinecap="round" strokeLinejoin="round"
-                                    d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
-                            </svg>
-                        </div>
-                    </button>
-
-                </div>
+                <button
+                    class="btn bg-primary-color text-lg md:text-xl font-extrabold rounded-[32px] w-11/12 md:w-full h-14 mt-8">
+                    Send Mail
+                    <!-- icon -->
+                    <div class="w-6 h-6 rounded-full bg-black flex justify-center items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5}
+                            stroke="currentColor" class="w-5 h-3 text-white">
+                            <path strokeLinecap="round" strokeLinejoin="round"
+                                d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                        </svg>
+                    </div>
+                </button>
             </form>
         </section>
-
     </main>
     <!-- main container ends here -->
 
     <!-- footer container starts here -->
-    <footer class="hidden w-full h-auto bg-black">
+    <footer class="w-full h-auto bg-black mt-3">
         <div>
             <!-- footer content -->
             <div class="w-11/12 space-y-5 py-10 md:py-24">
