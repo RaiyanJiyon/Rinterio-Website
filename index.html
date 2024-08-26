@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -37,9 +38,10 @@
 
 <body class="manrope">
     <!--  header container starts here -->
-    <header class="md:container mx-auto">
+    <header class="md:container mx-auto bg-gradient-to-r from-[#FFFFFF] to-[#FFFFFF]">
+        <!--  For medium screen -->
         <!-- navbar -->
-        <div class="navbar bg-base-100">
+        <div class="navbar bg-base-100  hidden sm:flex">
             <div class="navbar-start">
                 <!-- drop bar -->
                 <div class="dropdown">
@@ -72,7 +74,7 @@
                     Rinterio
                 </a>
             </div>
-            <div class="navbar-center hidden lg:flex">
+            <div class="hidden lg:flex navbar-center">
                 <ul class="menu menu-horizontal px-1">
                     <li><a>Home</a></li>
                     <li class="text-[#737373]"><a>Services</a></li>
@@ -81,10 +83,10 @@
                     <li class="text-[#737373]"><a>Contact Us</a></li>
                 </ul>
             </div>
-            <div class="hidden navbar-end md:flex gap-4">
+            <div class="navbar-end md:flex gap-4">
                 <!-- search icon -->
                 <div
-                    class="hidden md:flex h-10 w-10 items-center justify-center rounded-full bg-white border border-[#e9e9e9] cursor-pointer hover:bg-gray-200">
+                    class="hidden sm:flex h-10 w-10 items-center justify-center rounded-full bg-white border border-[#e9e9e9] cursor-pointer hover:bg-gray-200">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5}
                         stroke="currentColor" class="w-5 h-5 text-black">
                         <path strokeLinecap="round" strokeLinejoin="round"
@@ -95,7 +97,7 @@
 
                 <!-- shop icon -->
                 <div
-                    class="hidden md:flex h-10 w-10 items-center justify-center rounded-full bg-white border border-[#e9e9e9] cursor-pointer hover:bg-gray-200">
+                    class="hidden sm:flex h-10 w-10 items-center justify-center rounded-full bg-white border border-[#e9e9e9] cursor-pointer hover:bg-gray-200">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5}
                         stroke="currentColor" class="w-5 h-5 text-black">
                         <path strokeLinecap="round" strokeLinejoin="round"
@@ -105,9 +107,7 @@
 
                 </div>
 
-
-
-                <button class="btn bg-primary-color rounded-[32px]">
+                <button class="hidden sm:flex btn bg-primary-color rounded-[32px]">
                     Book Consult
                     <!-- icon -->
                     <div class="w-6 h-6 rounded-full bg-black flex justify-center items-center">
@@ -118,6 +118,44 @@
                         </svg>
                     </div>
                 </button>
+            </div>
+        </div>
+
+        <!-- ! small screen -->
+        <!-- navbar -->
+        <div class="sm:hidden navbar bg-base-100 flex justify-between items-center w-full overflow-x-hidden">
+            <div class="navbar-start">
+                <a class="btn btn-ghost text-xl font-extrabold">
+                    <!-- icon -->
+                    <div class="w-6 h-6 rounded-full bg-primary-color flex justify-center items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5}
+                            stroke="currentColor" class="w-5 h-3 text-black">
+                            <path strokeLinecap="round" strokeLinejoin="round"
+                                d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                        </svg>
+                    </div>
+                    Rinterio
+                </a>
+            </div>
+
+            <div class="navbar-end flex lg:hidden">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                        <li><a>Home</a></li>
+                        <li class="text-[#737373]"><a>Services</a></li>
+                        <li class="text-[#737373]"><a>Portfolio</a></li>
+                        <li class="text-[#737373]"><a>Blogs</a></li>
+                        <li class="text-[#737373]"><a>Contact Us</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
 
@@ -233,8 +271,8 @@
                 </div>
 
                 <!-- liveable spaces image -->
-                <div class="w-11/12 md:w-[45%] mx-auto md:mx-0 mt-6 md:mt-0">
-                    <img class="w-full object-cover rounded-2xl h-auto" src="assets/Rectangle.png" alt="building image">
+                <div class="w-11/12 md:w-[45%] h-full mx-auto md:mx-0 mt-6 md:mt-0">
+                    <img class="w-full object-cover rounded-2xl h-full" src="assets/Rectangle.png" alt="building image">
                 </div>
             </div>
 
@@ -460,7 +498,8 @@
                     <!-- second row -->
                     <div class="grid grid-cols-1 md:grid-cols-8 gap-4">
                         <!-- card 3 -->
-                        <div class="order-last md:order-none border border-[#e9e9e9] rounded-2xl flex gap-6 p-4 md:col-span-2">
+                        <div
+                            class="order-last md:order-none border border-[#e9e9e9] rounded-2xl flex gap-6 p-4 md:col-span-2">
                             <!-- image -->
                             <div class="w-full">
                                 <img src="assets/img3.png" alt="" class="w-full h-full">
@@ -497,9 +536,10 @@
                                 </div>
                             </div>
                         </div>
-                        
+
                         <!-- card 5 -->
-                        <div class="order-first md:order-none border border-[#e9e9e9] rounded-2xl flex gap-6 p-4 md:col-span-2">
+                        <div
+                            class="order-first md:order-none border border-[#e9e9e9] rounded-2xl flex gap-6 p-4 md:col-span-2">
                             <!-- image -->
                             <div class="w-full">
                                 <img src="assets/img5.png" alt="" class="w-full h-full object-fill">
@@ -712,8 +752,7 @@
 
 
         <!-- ? faq section -->
-        <section
-            class="w-11/12 md:container mx-auto flex flex-col items-center md:flex-row gap-6 mt-12 md:mt-24">
+        <section class="w-11/12 md:container mx-auto flex flex-col items-center md:flex-row gap-6 mt-12 md:mt-24">
             <!-- faq contents -->
             <div class="w-full md:w-1/2">
                 <h2 class="text-[#212121] text-3xl md:text-4xl font-extrabold mb-6 text-center md:text-left md:pl-4">
@@ -904,4 +943,5 @@
     </footer>
     <!-- ? footer container ends here -->
 </body>
+
 </html>
