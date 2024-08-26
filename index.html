@@ -41,6 +41,7 @@
         <!-- navbar -->
         <div class="navbar bg-base-100">
             <div class="navbar-start">
+                <!-- drop bar -->
                 <div class="dropdown">
                     <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
@@ -58,6 +59,7 @@
                         <li class="text-[#737373]"><a>Contact Us</a></li>
                     </ul>
                 </div>
+                <!-- navbar -->
                 <a class="btn btn-ghost text-xl font-extrabold">
                     <!-- icon -->
                     <div class="w-6 h-6 rounded-full bg-primary-color flex justify-center items-center">
@@ -79,7 +81,7 @@
                     <li class="text-[#737373]"><a>Contact Us</a></li>
                 </ul>
             </div>
-            <div class="navbar-end flex gap-4">
+            <div class="hidden navbar-end md:flex gap-4">
                 <!-- search icon -->
                 <div
                     class="hidden md:flex h-10 w-10 items-center justify-center rounded-full bg-white border border-[#e9e9e9] cursor-pointer hover:bg-gray-200">
@@ -456,9 +458,9 @@
                     </div>
 
                     <!-- second row -->
-                    <div class="grid grid-cols-1 md:grid-cols-6 gap-4">
+                    <div class="grid grid-cols-1 md:grid-cols-8 gap-4">
                         <!-- card 3 -->
-                        <div class="order-last md:order-none border border-[#e9e9e9] rounded-2xl flex gap-6 p-4">
+                        <div class="order-last md:order-none border border-[#e9e9e9] rounded-2xl flex gap-6 p-4 md:col-span-2">
                             <!-- image -->
                             <div class="w-full">
                                 <img src="assets/img3.png" alt="" class="w-full h-full">
@@ -467,13 +469,13 @@
 
                         <!-- card 4 -->
                         <div
-                            class="border border-[#e9e9e9] rounded-2xl flex flex-col md:flex-row gap-6 p-4 md:col-start-2 md:col-span-4">
+                            class="border border-[#e9e9e9] rounded-2xl flex flex-col md:flex-row gap-6 p-4 md:col-span-4">
                             <!-- image -->
-                            <div class="w-full md:w-4/5">
+                            <div class="w-full md:w-1/2">
                                 <img src="assets/img4.png" alt="" class="w-full h-full">
                             </div>
                             <!-- content -->
-                            <div class="space-y-3 md:space-y-5">
+                            <div class="space-y-3 md:space-y-5 md:w-1/2">
                                 <h3 class="text-[#494949] text-xl md:text-2xl font-extrabold">
                                     Commercial
                                 </h3>
@@ -495,10 +497,9 @@
                                 </div>
                             </div>
                         </div>
-
-
+                        
                         <!-- card 5 -->
-                        <div class="order-first md:order-none border border-[#e9e9e9] rounded-2xl flex gap-6 p-4">
+                        <div class="order-first md:order-none border border-[#e9e9e9] rounded-2xl flex gap-6 p-4 md:col-span-2">
                             <!-- image -->
                             <div class="w-full">
                                 <img src="assets/img5.png" alt="" class="w-full h-full object-fill">
